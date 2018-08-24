@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Animal Quizz</string>
+    <string name="question1">1) True or false? Mice live for up to 10 years.</string>
+    <string name="question2">2) True or false? Crocodiles have no sweat glands so they use their mouths to release heat.</string>
+    <string name="question3">3) True or false? Rabbits are born blind.</string>
+    <string name="question4">4) Which of the following animals are mammals?</string>
+    <string name="question5">5) Which of the following animals are not Mammals?</string>
+    <string name="question6">6) Which of these food sources does the bald eagle feed on?</string>
+    <string name="question7">7) What is the largest land animal in the world?</string>
+    <string name="question8">8) What are female elephants called?</string>
+    <string name="question9">9) How many pairs of wings does a bee have?</string>
+    <string name="question10">10)</string>
+
+    <string name="radio_false">false</string>
+    <string name="radio_true">true</string>
+</resources>

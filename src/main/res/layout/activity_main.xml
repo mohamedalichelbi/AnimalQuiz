@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#795548"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:text="Animal Quiz"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question1" />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                android:id="@+id/q1_wrong"
+                style="@style/RadioButton"
+                android:text="@string/radio_true" />
+
+            <RadioButton
+                android:id="@+id/q1_right"
+                style="@style/RadioButton"
+                android:text="@string/radio_false" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question2" />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                android:id="@+id/q2_right"
+                style="@style/RadioButton"
+                android:text="@string/radio_true" />
+
+            <RadioButton
+                android:id="@+id/q2_wrong"
+                style="@style/RadioButton"
+                android:text="@string/radio_false" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question3" />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                android:id="@+id/q3_right"
+                style="@style/RadioButton"
+                android:text="@string/radio_true" />
+
+            <RadioButton
+                android:id="@+id/q3_wrong"
+                style="@style/RadioButton"
+                android:text="@string/radio_false" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question4" />
+
+        <LinearLayout style="@style/AnswerLinearLayout">
+
+            <CheckBox
+                android:id="@+id/q4_right_answer1"
+                style="@style/CheckBoxAnswer"
+                android:text="Cat" />
+
+            <CheckBox
+                android:id="@+id/q4_right_answer2"
+                style="@style/CheckBoxAnswer"
+                android:text="Pig" />
+
+            <CheckBox
+                android:id="@+id/q4_wrong_answer"
+                style="@style/CheckBoxAnswer"
+                android:text="Clown fish" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question5" />
+
+        <LinearLayout style="@style/AnswerLinearLayout">
+
+            <CheckBox
+                android:id="@+id/q5_wrong_answer"
+                style="@style/CheckBoxAnswer"
+                android:text="Whale" />
+
+            <CheckBox
+                android:id="@+id/q5_right_answer1"
+                style="@style/CheckBoxAnswer"
+                android:text="Frog" />
+
+            <CheckBox
+                android:id="@+id/q5_right_answer2"
+                style="@style/CheckBoxAnswer"
+                android:text="Crow" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question6" />
+
+        <LinearLayout style="@style/AnswerLinearLayout">
+
+            <CheckBox
+                android:id="@+id/q6_wrong_answer"
+                style="@style/CheckBoxAnswer"
+                android:text="Plants" />
+
+            <CheckBox
+                android:id="@+id/q6_right_answer1"
+                style="@style/CheckBoxAnswer"
+                android:text="Fish" />
+
+            <CheckBox
+                android:id="@+id/q6_right_answer2"
+                style="@style/CheckBoxAnswer"
+                android:text="Mammals" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question7" />
+
+        <EditText
+            android:id="@+id/q7_answer"
+            style="@style/TextInputAnswer" />
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question8" />
+
+        <EditText
+            android:id="@+id/q8_answer"
+            style="@style/TextInputAnswer" />
+
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question9" />
+
+        <EditText
+            android:id="@+id/q9_answer"
+            style="@style/TextInputAnswer" />
+
+        <LinearLayout style="@style/AnswerLinearLayout">
+
+            <Button
+                android:id="@+id/submit_answers"
+                style="@style/ButtonStyle"
+                android:onClick="submitAnswers"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/view_answers"
+                style="@style/ButtonStyle"
+                android:onClick="viewAnswers"
+                android:text="view answers" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/display_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
